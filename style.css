@@ -19,7 +19,15 @@
     --white: #fff;
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
-
+}
+body.escuro {
+    --bg-color: #313e51;
+    --bg-mobile: url(./assets/images/pattern-background-mobile-dark.svg);
+    --bg-desktop: url(./assets/images/pattern-background-desktop-dark.svg);
+    --primary-text-color: #fff;
+    --secundary-text-color: #abc1e1;
+    --button-bg: #3b4d66;
+    --shadow: 0px 16px 40px 0px rgba(49,62,81, 0.14);
 }
 body {
     height: 100svh;
@@ -31,7 +39,11 @@ header {
     padding: 16px 24px;
     display: flex;
     justify-content: flex-end;
+    max-width: 1160px;
+    margin-inline: auto;
+
 }
+
 .tema {
     padding: 8px 0;
     display: flex;
@@ -94,18 +106,15 @@ main {
     font-weight: 500;
     color: var(--primary-text-color);
 }
-
 .assuntos button div {
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
-
 .assuntos button img {
     width: 100%;
 }
-
 .botao_html div {
     background: var(--bg-html);
 }
@@ -118,73 +127,56 @@ main {
 .botao_acessibilidade div {
     background: var(--bg-acessibilidade);
 }
-
 @media(min-width: 1100px) {
     body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
-
     header {
         margin-block: 81px;
-        .tema {
-            gap: 16px;
-        }
-    
-        .tema img {
-            width: 24px;
-        }
-    
-        .tema button {
-            width: 48px;
-            height: 28px;
-        }
-    
-        .tema button div {
-            width: 20px;
-            height: 20px;
-        }
-    
-        main {
     }
-
+    .tema {
+        gap: 16px;
+    }
     .tema img {
-
+        width: 24px;
     }
-
+    .tema button {
+        width: 48px;
+        height: 28px;
+    }
+    .tema button div {
+        width: 20px;
+        height: 20px;
+    }
     main {
         display: flex;
         max-width: 1160px;
         margin-inline: auto;
     }
-
     section {
         width: 100%;
     }
-
     .boas_vindas h1 {
         font-size: 64px;
         margin-bottom: 48px;
     }
-
     .boas_vindas p {
         font-size: 20px;
     }
-
+    
     .assuntos {
         gap: 24px;
     }
-
     .assuntos button {
         font-size: 28px;
         padding: 20px;
         gap: 32px;
     }
-
     .assuntos button div {
         width: 56px;
         height: 56px;
         padding: 8px;
     }
-}   }
+}
