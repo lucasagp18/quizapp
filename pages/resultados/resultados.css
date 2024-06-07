@@ -79,7 +79,10 @@ header{
     border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
+    cursor: pointer;
 }
+
 .tema button div{
     background: var(--white);
     width: 12px;
@@ -107,12 +110,12 @@ main h2 strong{
     gap: 16px;
     border-radius: 12px;
     margin-bottom: 12px;
+    box-shadow: var(--shadow);
 }
 .pontuacao strong{
     font-size: 88px;
     color: var(--primary-text-color);
     font-weight: 500;
-    
 }
 .pontuacao p{
     color: var(--secundary-text-color);
@@ -181,20 +184,16 @@ main button:hover{
     main h2{
         font-size: 44px;
     }
-
     .pontuacao{
         border-radius: 24px;
         margin-bottom: 32px;
     }
-
     .pontuacao strong{
         font-size: 144px;
     }
-
     .pontuacao p{
         font-size: 24px;
     }
-
     main button{
         font-size: 22px;
         padding: 24px;
