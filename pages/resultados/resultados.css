@@ -138,6 +138,23 @@ main h2 strong {
     color: var(--secundary-text-color);
     font-size: 18px;
 }
+main button {
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background: var(--purple);
+    color: var(--white);
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+main button:hover {
+    background: var(--purple-hover);
+    cursor: pointer;
+}
 
 @media(min-width: 1100px) {
     body {
