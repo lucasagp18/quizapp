@@ -163,6 +163,23 @@ main {
         color: var(--white);
     }
 }
+.alternativas label#correta {
+    outline: 2px solid var(--green);
+
+    & span {
+        background: var(--green);
+        color: var(--white);
+    }
+}
+
+.alternativas label#errada {
+    outline: 2px solid var(--red);
+
+    & span {
+        background: var(--red);
+        color: var(--white);
+    }
+}
 
 .alternativas input {
     display: none;
