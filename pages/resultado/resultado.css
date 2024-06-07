@@ -48,14 +48,30 @@ header{
     align-items: center;
     gap: 16px;
 }
-.assunto_ícone{
+.assunto_icone{
     background: var(--bg-acessibilidade);
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
-.assunto_ícone img{
+.assunto_icone.html {
+    background: var(--bg-html);
+}
+
+.assunto_icone.css {
+    background: var(--bg-css);
+}
+
+.assunto_icone.javascript {
+    background: var(--bg-javascript);
+}
+
+.assunto_icone.acessibilidade {
+    background: var(--bg-acessibilidade);
+}
+
+.assunto_icone img{
     height: 100%;
 }
 .assunto h1{
@@ -148,7 +164,7 @@ main button:hover{
         max-width: 1160px;
         margin-inline: auto;
     }
-    .assunto_ícone{
+    .assunto_icone{
         width: 56px;
         height: 56px;
         padding: 8px;
